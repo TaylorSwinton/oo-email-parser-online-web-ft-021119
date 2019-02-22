@@ -15,11 +15,7 @@ class EmailParser
 
   def parse
     @email = @emails.split(/[\s,]+/)
-      @email.each do |email|
-        if email.include?(email)
-          email.delete(email)
-        end
-      end
+
     @email
   end
 
